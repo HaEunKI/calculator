@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>스스로 계산기 코딩해보기</title>
+    </head>
+    <body>
+        <script>
+            while(true){
+                var a, b = null;
+                a=prompt('1번 숫자를 입력해주세요.');
+                b=prompt('2번 숫자를 입력해주세요');
+            var num1=Number(a);
+            var num2=Number(b);
+            if(a != null && b != null){
+                break;
+            }
+            };
+            
+
+            while(true){
+                var c=prompt('어떤 계산을 시작할까요? 1. 덧셈 2. 뺄셈 3. 나눗셈 4. 곱셈'); //절댓값 구하기도 추후 만들예정.
+                var d=Number(c);
+                if(d> 4 || d<0){
+                    alert('1~5까지의 숫자만 가능합니다!');
+                    continue;
+                }
+                if(d==1){
+                    var e= num1 + num2;
+                    var num3 = Number(e);
+                    alert('결과는'+ num3 + '입니다.');
+                    break;
+                }
+                else if(d==2){
+                    var e= num1 - num2;
+                    var num3 = Number(e);
+                    alert('결과는'+ num3 + '입니다.');
+                    break;
+                }
+                else if(d==3){
+                    var e= num1 / num2;
+                    var num3 = Number(e);
+                    var f = num1 % num2;
+                    var num4=Number(f);
+                    alert('몫은'+ num3 + '이고, 나머지는' + num4 + '입니다.');
+                    break;
+                }
+                else if(d==4){
+                    var e= num1 * num2;
+                    var num3 = Number(e);
+                    alert('결과는'+ num3 + '입니다.');
+                    break;
+                }
+                
+            }
+        </script>
+    </body>
+</html>
